@@ -1,1 +1,134 @@
-Hello World!
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Maxim Novoseltsev</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+        .photo-container {
+            margin: 10px;
+            position: relative;
+        }
+
+        .photo {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="summary-tab" data-bs-toggle="tab" data-bs-target="#summary-tab-pane"
+                    type="button" role="tab" aria-controls="summary-tab-pane" aria-selected="true">About Me
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="job-tab" data-bs-toggle="tab" data-bs-target="#job-tab-pane"
+                    type="button" role="tab" aria-controls="other-tab-pane" aria-selected="false">Job Activity
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="other-tab" data-bs-toggle="tab" data-bs-target="#other-tab-pane"
+                    type="button" role="tab" aria-controls="other-tab-pane" aria-selected="false">Other Projects
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="hobby-tab" data-bs-toggle="tab" data-bs-target="#hobby-tab-pane"
+                    type="button" role="tab" aria-controls="hobby-tab-pane" aria-selected="false">Hobbies
+            </button>
+        </li>
+    </ul>
+    <div class="tab-content mt-5" id="myTabContent">
+        <div class="tab-pane fade show active" id="summary-tab-pane" role="tabpanel" aria-labelledby="summary-tab"
+             tabindex="0">
+            <p>
+                Maxim Novoseltsev, MSc Physics.
+            </p>
+            <p>
+                Software Engineer/Architect (Certified) with hands-on in modern Software Development (certified Spring
+                Professional) inkl. CI/CD processes. Experience in (Big) Data Engineering (Diploma of Advanced Study in
+                Data Science) as well as business process implementation and integration in a lot of industries,
+                inclusive Finance (Avaloq Certified Professional), and Insurance. Long-term Agile (Scrum) methodology
+                practice. Some achievements:
+
+            </p>
+            <ul>
+                <li>Reducing security and legal risks thanks to integration third-party library analysis into CI/CD
+                    process
+                </li>
+                <li>Detection and fixing of performance bottlenecks for distributed application thanks to log analysis
+                    with the help of Big Data technology
+                </li>
+                <li>Remarkable improvement donor churn prediction for World Vision, Switzerland</li>
+                <li>Development of the architecture and successful deployment of EAI platform as basis for a lot of
+                    successfully deployed integration scenarios (SmarTeam PDM-BaaN integration was referenced by BaaN
+                    media as a “successful story”)
+                </li>
+                <li>
+                    MVP Spring Starter for activation semantic search in existing applications, s. explanation and
+                    demo <a href="https://youtu.be/QF1oro2YQaQ">https://youtu.be/QF1oro2YQaQ</a>, s. project on <a
+                        href="https://github.com/mxn/llm-integration">https://github.com/mxn/llm-integration</a>
+                </li>
+                <li>Launched DApp <a href="https://www.erc20-options.com/">http://www.erc20-options.com/</a>
+                    (Ethereum-blockchain based platform for operation with stock options analog for ERC20 tokens), s
+                    project on <a href="https://github.com/mxn/eth_option">https://github.com/mxn/eth_option</a>
+                </li>
+                <li>Acknowledgment for support in applying Data Analysis / Visualisation methods for a cancer related
+                    research: <a href="https://doi.org/10.18632/oncotarget.24300">https://doi.org/10.18632/oncotarget.24300</a>
+                </li>
+                <li>
+                    Bronze Medal in a <a href="https://www.kaggle.com/">Kaggle</a> Machine Learning Competition
+                </li>
+            </ul>
+            <p>
+                You can find me also at <a href="https://ch.linkedin.com/in/mnovoseltsev/">https://ch.linkedin.com/in/mnovoseltsev/</a>
+            </p>
+
+        </div>
+        <div class="tab-pane fade" id="job-tab-pane" role="tabpanel" aria-labelledby="job-tab" tabindex="0">
+            <ul>
+                <li>Senior Software Engineer, Contractor, Löwenfels AG, Zurich/Luzern 2019-2023</li>
+                <li>Principal Consultant, Excellian / Luxoft, Zug, 2018</li>
+                <li>Solution/Software Architect, Avaloq, Zurich, 2016-2018</li>
+                <li>Middeware Engineer, Huber+Suhner AG, Pfäffikon ZH, 2001-2015</li>
+                <li>Data Analytics, Software Engineer, XX century</li>
+            </ul>
+        </div>
+        <div class="tab-pane fade" id="other-tab-pane" role="tabpanel" aria-labelledby="other-tab" tabindex="0">
+            <p>
+                Andere Projekte: Donator Churn Prevention, World Vision, Schweiz. Okt-Dez 2015. Ziel: Reduzierung der
+                Kosten für die
+                Unterstützung der Spender-Basis. Aktivität: Unterstützung durch Definition von Metriken, Modellen und
+                Prozessen für
+                die Bestimmung möglicher Massnahmen zur Verhinderung der Spender-Churn; Feature-Engineering...
+            </p>
+        </div>
+        <div class="tab-pane fade" id="hobby-tab-pane" role="tabpanel" aria-labelledby="hobby-tab" tabindex="0">
+            <p>
+                Machine Learning, Blockchain, Reading, Mountain-Bike, Ski, Climbing ...
+            </p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 photo-container">
+                        <img src="skitour.png" class="photo" alt="ski touring"/>
+                    </div>
+                    <div class="col-md-4 photo-container">
+                        <img src="mtb_lake.png" class="photo" alt="mtb">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+</html>
